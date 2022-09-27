@@ -1,6 +1,6 @@
 # vite-project
 
-2XCASH prodject
+2XCASH project
 
 This template should help get you started developing with Vue 3 in Vite.
 
