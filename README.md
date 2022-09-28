@@ -20,12 +20,12 @@ npm install
 
 ### Compile and Hot-Reload for Development
 
-```sh
+```sh develop
 npm run dev
 ```
 
 ### Compile and Minify for Production
 
-```sh
+```sh build
 npm run build
 ```
