@@ -1,4 +1,4 @@
-# vite-project
+# 2x
 
 2XCASH private project
 
