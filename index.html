@@ -4,9 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <title>Document</title>
 </head>
 <body>
-  
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+
+  <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
+</div>
+
+<div x-data="{ open: false }">
+  <button @click="open = true">Expand</button>
+
+  <span x-show="open">
+    Content...
+  </span>
+</div>
 </body>
 </html>
