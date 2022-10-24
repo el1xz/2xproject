@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
   <title>Document</title>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
 
-  <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
-</div>
+<style>
+  * {
+    font-family: 'Space Mono', monospace;
+  }
+</style>
 
-<div x-data="{ open: false }">
-  <button @click="open = true">Expand</button>
+<body class="bg-[#121212]">
+  <header class="bg-[#252525] h-[60px]">
+    <img class="m-auto h-[60px]" src="logo.svg" alt="logo">
+  </header>
+  <main class="mt-[20px]">
+    <div class="text-[24px] font-bold text-white px-4">
+      Today Picks
+    </div>
+    <div x-data="{ 
+      today: new Date().toJSON().slice(0,10).replace(/-/g,'/')
+     }">
+      <div class="text-white mt-1 px-4" x-text="today"/>
+    </div>
 
-  <span x-show="open">
-    Content...
-  </span>
-</div>
+    <!-- ALL PICKS THERE -->
+    <div class="mt-6 px-4">
+      <div class="font-bold text-white text-[20px]">
+        NFL
+      </div>
+      <div class="mt-1 text-white italic text-[14px]">
+        Patriots -8 (-110) 3:15 AM
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>
