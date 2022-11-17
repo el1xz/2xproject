@@ -24,19 +24,20 @@
   <header class="bg-[#252525] h-[60px]">
     <img class="m-auto h-[60px]" src="logo.svg" alt="logo">
   </header>
-  <main class="mt-[20px]">
+  <main x-data="{open: ''}" class="mt-[20px]">
+    <input x-show="open !== 'LIAOH-BLSGG-7XGW4-E1D47-OGEAN'" type="text" x-model="open">
     <div class="text-[24px] font-bold text-white px-4">
       Today Picks
     </div>
-    <div x-data="{ 
+    <div x-data="{
       today: new Date().toJSON().slice(0,10).replace(/-/g,'/')
      }">
-      <div class="text-white mt-1 px-4" x-text="today"/>
+      <div class="text-white mt-1 px-4" x-text="today" />
     </div>
 
     <!-- ALL PICKS THERE -->
-    <div class="mt-6 px-4">
-            <div class="font-bold text-white text-[20px]">
+    <div x-show="open === 'LIAOH-BLSGG-7XGW4-E1D47-OGEAN'" class="mt-6 px-4">
+      <div class="font-bold text-white text-[20px]">
         DAILY PLAYS
       </div>
       <div class="mt-1 text-white text-[14px]">
@@ -57,18 +58,6 @@
       <div class="mt-1 text-white text-[14px]">
         Islanders ml (+102) 4:00 AM
       </div>
-      
-
-
-      
-
-
-      
-      
-      
-
-
-
   </main>
 
   <footer class="absolute bottom-0 px-4 mb-4 text-[14px] italic">
