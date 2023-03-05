@@ -22,7 +22,7 @@
 
 <body class="bg-[#121212]">
   <header class="bg-[#252525] h-[60px]">
-    <img class="m-auto h-[60px]" src="logo.svg" alt="logo">
+    <img class="m-auto h-[60px]" src="logo_small.svg" alt="logo">
   </header>
   <main x-data="{open: ''}" class="mt-[20px]">
     <input x-show="open !== '0'" type="text" x-model="open">
@@ -38,10 +38,23 @@
     <!-- ALL PICKS THERE -->
     <div x-show="open === '0'" class="mt-6 px-4">
       <div class="font-bold text-white text-[20px]">
-        DAILY PLAYS
+        MAIN PLAYS
       </div>
       <div class="mt-1 text-white text-[14px]">
-        Iowa State -4.5 (-115) 5:00 AM
+        Penn State -3.5 (-110) 8:00 PM
+      </div>
+      <div class="mt-1 text-white text-[14px]">
+        Suns +1.5 (-110) 9:00 PM
+      </div>
+      <div class="mt-1 text-white text-[14px]">
+        Nets -7.5 (-110) 2:00 AM
+      </div>
+
+      <div class="font-bold mt-[20px] text-white text-[20px]">
+        BONUS
+      </div>
+      <div class="mt-1 text-white text-[14px]">
+        E.Carolina +10.5 (-102) 10:00 PM
       </div>
   </main>
 
