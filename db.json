@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Buy groceries",
+      "description": "Milk, eggs, bread, and cheese",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Do laundry",
+      "description": "Wash clothes and sheets",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Finish project",
+      "description": "Complete the final report and submit it",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "title": "Call mom",
+      "description": "Check in and say hi",
+      "completed": false
+    }
+  ]
+}
